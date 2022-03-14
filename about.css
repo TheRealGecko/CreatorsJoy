@@ -85,6 +85,7 @@
 
 .whole {
 	padding: 0 50px;
+	float: left;
 	margin-bottom: 60px;
 	display: flex;
 	opacity: 0;
