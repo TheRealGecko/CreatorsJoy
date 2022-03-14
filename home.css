@@ -51,6 +51,7 @@ a {
 
 .whole {
 	margin-top: 600px;
+	justify-content: center;
 	padding: 0 50px;
 	display: flex;
 	opacity: 0;
