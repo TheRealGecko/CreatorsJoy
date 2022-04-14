@@ -1,5 +1,6 @@
 <html>
 	<head>
+		<meta name="viewport" content="initial-scale=1">
 		<title>Creators' Joy</title>
 		<link rel="stylesheet" href="navbar.css">
 		<link rel="stylesheet" href="volunteer.css">
@@ -7,18 +8,20 @@
 	<body>
 		<div id = "nav_bar">
 			<img id = "logo" src = "res/logo.png"/>
-			<ul>
+			<button id = "open" onclick = "openNav()">&#9776;</button>
+			<ul id = "side">
+				<button id = "close" onclick = "closeNav()">&times;</button>
 				<li><a class = "other" href = "index.html">Home</a></li>
 				<li><a class = "other" href = "about_us.html">About us</a></li>
 				<li><a id = "select" href = "volunteer.html">Volunteer</a></li>
 				<li><a class = "other" href = "gallery.html">Gallery</a></li>
 				<li><a class = "other" href = "blog.html">Blog</a></li>
+				<div id = "social">
+					<a href = "mailto: creatorsjoyglobal@gmail.com"><img class = "contact" id = "email" src = "res/email.png"/></a>
+					<a href = "https://www.facebook.com/creatorsjoy/"><img class = "contact" id = "facebook" src = "res/facebook.png"/></a>
+					<a href = "https://www.instagram.com/creatorsjoy/?hl=en"><img class = "contact" id = "insta" src = "res/insta.png"/></a>
+				</div>
 			</ul>
-			<div id = "social">
-				<a href = "mailto: creatorsjoyglobal@gmail.com"><img class = "contact" id = "email" src = "res/email.png"/></a>
-				<a href = "https://www.facebook.com/creatorsjoy/"><img class = "contact" id = "facebook" src = "res/facebook.png"/></a>
-				<a href = "https://www.instagram.com/creatorsjoy/?hl=en"><img class = "contact" id = "insta" src = "res/insta.png"/></a>
-			</div>
 		</div>
 		
 		<div id = "header">
@@ -32,6 +35,7 @@
 
         <div id = "footer">2016 - 2022 Creators' Joy</div>
 
+		<script src = "navbar.js"></script>
 		<script>
 		</script>
 	</body>
