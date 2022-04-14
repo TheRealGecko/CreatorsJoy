@@ -51,8 +51,8 @@ a {
 
 .whole {
 	margin-top: 600px;
-	justify-content: center;
 	padding: 0 50px;
+	justify-content: center;
 	display: flex;
 	opacity: 0;
 	transition: 0.5s;
@@ -62,7 +62,6 @@ a {
 	padding-top: 130px;
 	font-family: 'Roboto', sans-serif;
 	width: 1000px;
-	height: 290px;
 	border-left: 5px solid #5BD5CB;
 	display: block;
 	text-align: center;
@@ -92,7 +91,7 @@ a {
 	width: 100%;
 	height: 400px;
 	background-color: #f54269;
-	margin: 50px 0px;
+	margin: 30px 0px;
 	font-family: 'Roboto', sans-serif;
 	text-align: center;
 	color: #FFFFFF
@@ -106,6 +105,7 @@ a {
 #cards_made p {
 	font-size: 40px;
 	font-family: 'Inter', sans-serif;
+	padding: 0 15px;
 }
 
 #join_us {
@@ -174,6 +174,48 @@ a {
 		margin: 0 auto;
 		margin-top: 12px;
 		border-bottom: 4px solid #5BD5CB;
+	}
+}
+
+@media only screen and (max-width: 653px) {
+	#heading h1 {
+		font-size: 80px;
+	}
+}
+
+@media only screen and (max-width: 574px) {
+	#heading {
+		height: 95vw;
+	}
+
+	#heading h1 {
+		font-size: 14vw;
+	}
+
+	#heading h2 {
+		margin-top: calc(-1vw - 20px);
+		font-size: 4vw;
+	}
+
+	#heading img {
+		width: 87vw;
+	}
+
+	.whole {
+		margin-top: 105vw;
+	}
+
+	.box {
+		font-size: 15vw;
+	}
+
+	.box h1 {
+		font-size: 11vw;
+	}
+
+	.box p {
+		margin-top: -12vw;
+		font-size: 5vw;
 	}
 }
 
