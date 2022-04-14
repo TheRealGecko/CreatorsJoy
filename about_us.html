@@ -1,24 +1,27 @@
 <html>
 	<head>
+		<meta name="viewport" content="initial-scale=1">
 		<title>Creators' Joy</title>
 		<link rel="stylesheet" href="navbar.css">
 		<link rel="stylesheet" href="about.css">
 	</head>
 	<body>
 		<div id = "nav_bar">
-			<img id = "logo" src = "res/logo.png"/>
-			<ul>
-				<li><a class = "other" href = "index.html">Home</a></li>
+			<img id = "logo" src = "logo.png"/>
+			<button id = "open" onclick = "openNav()">&#9776;</button>
+			<ul id = "side">
+				<button id = "close" onclick = "closeNav()">&times;</button>
+				<li><a class = "other" href = "home.html">Home</a></li>
 				<li><a id = "select" href = "about_us.html">About us</a></li>
 				<li><a class = "other" href = "volunteer.html">Volunteer</a></li>
 				<li><a class = "other" href = "gallery.html">Gallery</a></li>
 				<li><a class = "other" href = "blog.html">Blog</a></li>
+				<div id = "social">
+					<a href = "mailto: creatorsjoyglobal@gmail.com"><img class = "contact" id = "email" src = "email.png"/></a>
+					<a href = "https://www.facebook.com/creatorsjoy/"><img class = "contact" id = "facebook" src = "facebook.png"/></a>
+					<a href = "https://www.instagram.com/creatorsjoy/?hl=en"><img class = "contact" id = "insta" src = "insta.png"/></a>
+				</div>
 			</ul>
-			<div id = "social">
-				<a href = "mailto: creatorsjoyglobal@gmail.com"><img class = "contact" id = "email" src = "res/email.png"/></a>
-				<a href = "https://www.facebook.com/creatorsjoy/"><img class = "contact" id = "facebook" src = "res/facebook.png"/></a>
-				<a href = "https://www.instagram.com/creatorsjoy/?hl=en"><img class = "contact" id = "insta" src = "res/insta.png"/></a>
-			</div>
 		</div>
 		
 		<div id = "header">
@@ -27,79 +30,66 @@
 				<p>Founded in 2016, we are a student-run, nonprofit organization striving to spread joy<br>through unique handmade arts & crafts. From local shelters to community centres and hospitals,<br>we hope to create smiles one event at a time.</p>
 			</div>
 		</div>
-		<!--
-		<div id = "wrapper">
-			<div class = "img_pan">
-				<img src = "about_bg.jpg"/>
-				<h2>Mission</h2>
-				<p>Our mission is to spread the joy of handmade arts & crafts to loved ones and to those in need one event at a time.</p>
-			</div>
-			
-			<div class = "img_pan">
-				<img src = "about_bg.jpg"/>
-				<h2>Volunteer</h2>
-				<p>Want to help us spread joy in our community? Attend our events to make cards and earn volunteer hours.</p>
-			</div>
-			
-			<div class = "img_pan">
-				<img src = "about_bg.jpg"/>
-				<h2>Partner</h2>
-				<p>Whether as a partnering organization or sponsor, we'd love to have the chance to work together.</p>
-			</div>
-		</div>
-		-->
+
 		<div id = "divide"></div>
 		<div class = "whole" id = "mission">
 			<div class = "box">
-				<h1>Mission</h1>
-				<br>
-				<p>
-					Our mission is to spread the joy of handmade arts & crafts<br>to loved ones and to those in need one event at a time.
-				</p>
+				<div id = "text">
+					<h1>Mission</h1>
+					<br>
+					<p>
+						Our mission is to spread the joy of handmade arts & crafts to loved ones and to those in need one event at a time.
+					</p>
+				</div>
 			</div>
-			<img class = "ora" src = "res/mission.jpg"/>
+			<img class = "ora" src = "mission.jpg"/>
 		</div>
 		
 		<div class = "whole2" id = "volunteer">
-			<img class = "ora" src = "res/volunteer.jpg"/>
+			<img class = "ora" src = "volunteer.jpg"/>
 			<div class = "box2">
-				<h1>Volunteer</h1>
-				<br>
-				<p>
-					Want to help us spread joy in our community? Attend our events<br>to make cards and earn volunteer hours.
-				</p>
+				<div id = "text">
+					<h1>Volunteer</h1>
+					<br>
+					<p>
+						Want to help us spread joy in our community? Attend our events<br>to make cards and earn volunteer hours.
+					</p>
+				</div>
 			</div>
 		</div>
 		
 		<div class = "whole" id = "partner">
 			<div class = "box">
-				<h1>Partner</h1>
-				<br>
-				<p>
-					Whether as a partnering organization or sponsor, we'd love to have the chance to work together.
-				</p>
+				<div id = "text">
+					<h1>Partner</h1>
+					<br>
+					<p>
+						Whether as a partnering organization or sponsor, we'd love to have the chance to work together.
+					</p>
+				</div>
 			</div>
-			<img class = "ora" src = "res/partner.jpg"/>
+			<img class = "ora" src = "partner.jpg"/>
 		</div>
 		
 		<h1 id = "part_head">Past Partners</h1>
 		<div id = "sponsor_wrap">
-			<img class = "sponsor_pan" src = "res/sickkids.jpg"/>
-			<img class = "sponsor_pan" src = "res/519.jpg"/>
-			<img class = "sponsor_pan" src = "res/5k.jpg"/>
-			<img class = "sponsor_pan" src = "res/alpha.jpg"/>
-			<img class = "sponsor_pan" src = "res/group.jpg"/>
-			<img class = "sponsor_pan" src = "res/inn.jpg"/>
-			<img class = "sponsor_pan" src = "res/mc.jpg"/>
-			<img class = "sponsor_pan" src = "res/pride.jpg"/>
-			<img class = "sponsor_pan" src = "res/royal.jpg"/>
-			<img class = "sponsor_pan" src = "res/second_harvest.jpg"/>
-			<img class = "sponsor_pan" src = "res/sjmf.jpg"/>
-			<img class = "sponsor_pan" src = "res/ysm.jpg"/>
+			<img class = "sponsor_pan" src = "sickkids.jpg"/>
+			<img class = "sponsor_pan" src = "519.jpg"/>
+			<img class = "sponsor_pan" src = "5k.jpg"/>
+			<img class = "sponsor_pan" src = "alpha.jpg"/>
+			<img class = "sponsor_pan" src = "group.jpg"/>
+			<img class = "sponsor_pan" src = "inn.jpg"/>
+			<img class = "sponsor_pan" src = "mc.jpg"/>
+			<img class = "sponsor_pan" src = "pride.jpg"/>
+			<img class = "sponsor_pan" src = "royal.jpg"/>
+			<img class = "sponsor_pan" src = "second_harvest.jpg"/>
+			<img class = "sponsor_pan" src = "sjmf.jpg"/>
+			<img class = "sponsor_pan" src = "ysm.jpg"/>
 		</div>
 		
 		<div id = "footer">2016 - 2022 Creators' Joy</div>
 
+		<script src = "navbar.js"></script>
 		<script>
 			// fade and rise heading
 			let text = document.getElementById("text");
@@ -122,7 +112,7 @@
 					v.style.opacity = 1;
 				}
 
-				if(currentScroll >= 1080) {
+				if(currentScroll >= 970) {
 					p.style.opacity = 1;
 				}
 			});
