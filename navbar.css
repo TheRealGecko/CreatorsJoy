@@ -42,7 +42,7 @@
 
 #social {
 	display: block;
-	width: 400px;
+	width: 170px;
 	height: 40px;
 	float: right;
 	padding-top: 20px;
@@ -121,10 +121,9 @@
 		z-index: 1;
 		top: 0;
 		right: 0;
-		background-color: #5BD5CB;
+		background-color: #aaf5ef;
 		transition: 0.5s;
 	}
-
 
 	#social {
 		display: block;
@@ -140,6 +139,10 @@
 	}
 
 	#nav_bar a:hover {
-		color:aliceblue;
+		color:rgb(7, 37, 65);
+	}
+
+	#logo {
+		padding: 0 15px;
 	}
 }
