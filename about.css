@@ -7,7 +7,7 @@
 	display: block;
 	position: absolute;
 	text-align: center;
-	background-image: url("res/about_bg.jpg");
+	background-image: url("about_bg.jpg");
 	background-size: cover;
 }
 
@@ -23,11 +23,13 @@
 #header p {
 	font-family: 'Roboto', sans-serif;
 	font-size: 21px;
-	margin-top: -10px;
+	padding-top: -10px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 #header #text {
-	padding: 235px 0px;
+	padding: 210px 0px;
 	color: #FFFFFF;
 	opacity: 0;
 	animation: mymove 0.8s;
@@ -41,44 +43,6 @@
 	}
 }
 
-/*
-#wrapper {
-	top: 620px;
-	width: 100%;
-	height: 450px;
-	position: relative;
-	display: flex;
-}
-
-.img_pan {
-	width: 360px;
-	height: 410px;
-	text-align: center;
-	margin-left: calc((100% - (3 * 360px)) / 6);
-	margin-right: calc((100% - (3 * 360px)) / 6);
-	background-color: grey;
-	font-family: 'Roboto', sans-serif;
-	display: block;
-}
-
-.img_pan img {
-	width: 360px;
-	height: 250px;
-	object-fit: cover;
-}
-
-.img_pan h2 {
-	width: 100%;
-	background-color: white;
-	padding: 10px 0px;
-}
-
-.img_pan p {
-	padding: 20px;
-}
-
-*/
-
 #divide {
 	margin-top: 600px;
 }
@@ -86,7 +50,6 @@
 .whole {
 	padding: 0 50px;
 	justify-content: center;
-	float: left;
 	margin-bottom: 60px;
 	display: flex;
 	opacity: 0;
@@ -96,7 +59,6 @@
 .whole2 {
 	padding: 0 50px;
 	justify-content: center;
-	float: right;
 	margin-bottom: 60px;
 	display: flex;
 	opacity: 0;
@@ -104,14 +66,16 @@
 }
 
 .box {
-	padding-top: 130px;
 	font-family: 'Roboto', sans-serif;
-	width: 1000px;
-	height: 290px;
+	width: 100%;
+	height: 420px;
 	border-left: 5px solid #5BD5CB;
-	display: block;
 	text-align: center;
 	background-color: #fcfdff;
+}
+
+.box #text, .box2 #text {
+	padding: 8vw 20px;
 }
 
 .box h1, .box2 h1 {
@@ -129,12 +93,10 @@
 }
 
 .box2 {
-	padding-top: 130px;
 	font-family: 'Roboto', sans-serif;
-	width: 1000px;
-	height: 290px;
+	width: 100%;
+	height: 420px;
 	border-right: 5px solid #5BD5CB;
-	display: block;
 	text-align: center;
 	background-color: #fcfdff;
 }
@@ -162,20 +124,68 @@
 
 #sponsor_wrap {
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	gap: 35px;
-	padding: 0px 15%;
+	margin: 0px 50px 0px 38px;
 	margin-top: 55px;
 }
 
 .sponsor_pan {
-	width: 300px;
-	height: 300px;
 	align-items: center;
 	background-color: #bff7ff;
 	font-family: 'Roboto', sans-serif;
 	width: 100%;
 	object-fit: cover;
-	padding: 5px;
 	border: 5px solid #c7fffa;
+}
+
+@media only screen and (max-width: 464px) {
+	#header #text {
+		padding: 185px 0px;
+	}
+}
+
+@media only screen and (max-width: 450px) {
+	#header h1 {
+		font-size: 20vw;
+	}
+}
+
+@media only screen and (max-width: 893px) {
+	.ora {
+		display: none;
+	}
+
+	.whole, .whole2 {
+		margin-left: 0;
+		padding: 0 40px;
+	}
+
+	.box, .box2 {
+		border: none;
+		height: 300px;
+		padding: 0;
+	}
+
+	.box h1, .box2 h1 {
+		font-size: 60px;
+	}
+
+	.box p, .box2 p {
+		font-size: 25px;
+	}
+
+	.box h1:after, .box2 h1:after {
+		content: "";
+		height: 5px;
+		width: 150px;
+		display: block;
+		margin: 0 auto;
+		margin-top: 12px;
+		border-bottom: 4px solid #5BD5CB;
+	}
+
+	#divide {
+		margin-top: 680px;
+	}
 }
