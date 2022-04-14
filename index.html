@@ -1,111 +1,121 @@
 <html>
 	<head>
+		<meta name="viewport" content="initial-scale=1">
 		<title>Creators' Joy</title>
 		<link rel="stylesheet" href="navbar.css">
 		<link rel="stylesheet" href="home.css">
 	</head>
 	<body>
-	<div id = "nav_bar">
-		<img id = "logo" src = "res/logo.png"/>
-		<button id = "open" onclick = "openNav()">&#9776;</button>
-		<ul id = "side">
-			<button id = "close" onclick = "closeNav()">&times;</button>
-			<li><a id = "select" href = "index.html">Home</a></li>
-			<li><a class = "other" href = "about_us.html">About us</a></li>
-			<li><a class = "other" href = "volunteer.html">Volunteer</a></li>
-			<li><a class = "other" href = "gallery.html">Gallery</a></li>
-			<li><a class = "other" href = "blog.html">Blog</a></li>
-			<div id = "social">
-				<a href = "mailto: creatorsjoyglobal@gmail.com"><img class = "contact" id = "email" src = "res/email.png"/></a>
-				<a href = "https://www.facebook.com/creatorsjoy/"><img class = "contact" id = "facebook" src = "res/facebook.png"/></a>
-				<a href = "https://www.instagram.com/creatorsjoy/?hl=en"><img class = "contact" id = "insta" src = "res/insta.png"/></a>
-			</div>
-		</ul>
-	</div>
+		<div id = "nav_bar">
+			<img id = "logo" src = "logo.png"/>
+			<button id = "open" onclick = "openNav()">&#9776;</button>
+			<ul id = "side">
+				<button id = "close" onclick = "closeNav()">&times;</button>
+				<li><a class = "other" href = "home.html">Home</a></li>
+				<li><a id = "select" href = "about_us.html">About us</a></li>
+				<li><a class = "other" href = "volunteer.html">Volunteer</a></li>
+				<li><a class = "other" href = "gallery.html">Gallery</a></li>
+				<li><a class = "other" href = "blog.html">Blog</a></li>
+				<div id = "social">
+					<a href = "mailto: creatorsjoyglobal@gmail.com"><img class = "contact" id = "email" src = "email.png"/></a>
+					<a href = "https://www.facebook.com/creatorsjoy/"><img class = "contact" id = "facebook" src = "facebook.png"/></a>
+					<a href = "https://www.instagram.com/creatorsjoy/?hl=en"><img class = "contact" id = "insta" src = "insta.png"/></a>
+				</div>
+			</ul>
+		</div>
 		
-	<div id = "heading">
-		<div id = "block">
-			<img src = "res/logo.png"/>
-			<h1>CREATORS' JOY</h1>
-			<h2>FINDING JOY IN THE ORDINARY</h2>
+		<div id = "header">
+			<div id = "text">
+				<h1>ABOUT US</h1>
+				<p>Founded in 2016, we are a student-run, nonprofit organization striving to spread joy<br>through unique handmade arts & crafts. From local shelters to community centres and hospitals,<br>we hope to create smiles one event at a time.</p>
+			</div>
 		</div>
-	</div>
-	
-	<div class = "whole">
-		<div class = "box">
-			<h1>Who we are</h1>
-			<br>
-			<p>
-				We're a non-profit organization on a mission to spread the joy of handmade cards to those in
-				need, friends, family, and more. We run cardmaking events for volunteers to join us in creating
-				cards for donation to places such as hospitals, long-term care centres,
-				and youth organizations.
-				<br><br>Learn more about our mission <a href = "about_us.html"><u>here</u></a>
-			</p>
+
+		<div id = "divide"></div>
+		<div class = "whole" id = "mission">
+			<div class = "box">
+				<div id = "text">
+					<h1>Mission</h1>
+					<br>
+					<p>
+						Our mission is to spread the joy of handmade arts & crafts to loved ones and to those in need one event at a time.
+					</p>
+				</div>
+			</div>
+			<img class = "ora" src = "mission.jpg"/>
 		</div>
-		<img id = "ora" src = "res/origami.png"/>
-	</div>
-	
-	<div id = "cards_made">
-		<div id = "num">0</div>
-		<p>cards made from 2021 - 2022</p>
-	</div>
-	
-	<div id = "join_us">
-		<h1>Volunteer with us</h1>
-		<span id = "here"><a href = "volunteer.html">click here</a></span>
-	</div>
-	
-	<div id = "footer">2016 - 2022 Creators' Joy</div>
-	<script>
-		// Num of cards made
-		var num = 267;
-	
-		window.addEventListener("scroll", () => {
-			const currentScroll = window.pageYOffset;
+		
+		<div class = "whole2" id = "volunteer">
+			<img class = "ora" src = "volunteer.jpg"/>
+			<div class = "box2">
+				<div id = "text">
+					<h1>Volunteer</h1>
+					<br>
+					<p>
+						Want to help us spread joy in our community? Attend our events<br>to make cards and earn volunteer hours.
+					</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class = "whole" id = "partner">
+			<div class = "box">
+				<div id = "text">
+					<h1>Partner</h1>
+					<br>
+					<p>
+						Whether as a partnering organization or sponsor, we'd love to have the chance to work together.
+					</p>
+				</div>
+			</div>
+			<img class = "ora" src = "partner.jpg"/>
+		</div>
+		
+		<h1 id = "part_head">Past Partners</h1>
+		<div id = "sponsor_wrap">
+			<img class = "sponsor_pan" src = "sickkids.jpg"/>
+			<img class = "sponsor_pan" src = "519.jpg"/>
+			<img class = "sponsor_pan" src = "5k.jpg"/>
+			<img class = "sponsor_pan" src = "alpha.jpg"/>
+			<img class = "sponsor_pan" src = "group.jpg"/>
+			<img class = "sponsor_pan" src = "inn.jpg"/>
+			<img class = "sponsor_pan" src = "mc.jpg"/>
+			<img class = "sponsor_pan" src = "pride.jpg"/>
+			<img class = "sponsor_pan" src = "royal.jpg"/>
+			<img class = "sponsor_pan" src = "second_harvest.jpg"/>
+			<img class = "sponsor_pan" src = "sjmf.jpg"/>
+			<img class = "sponsor_pan" src = "ysm.jpg"/>
+		</div>
+		
+		<div id = "footer">2016 - 2022 Creators' Joy</div>
+
+		<script src = "navbar.js"></script>
+		<script>
+			// fade and rise heading
+			let text = document.getElementById("text");
 			
-			// Who we are animation
-			if (currentScroll => 400) {
-				opacity = 1;
-			}
-			document.querySelector(".whole").style.opacity = opacity;
-			
-			// Num of cards animation
-			if (currentScroll >= 660) {
-				const updateCount = () => {
-					const count = parseInt(document.getElementById("num").innerHTML);
+			text.animate({'top': -30}, {duration: 1000}, );
 
-					if (count < num) {
-						document.getElementById("num").innerHTML = count + 1;
-						setTimeout(updateCount, 2);
-					} else {
-						document.getElementById("num").innerHTML = num;
-					}
-				};
-				updateCount();
-			}
-			
-			if(currentScroll >= 1200) {
-				document.getElementById("here").style.backgroundSize = "100% 30%";
-			}
-		});
+			// fade-in sections
+			let m = document.getElementById("mission");
+			let v = document.getElementById("volunteer");
+			let p = document.getElementById("partner");
 
-		let block = document.getElementById("block");
-		block.style.opacity = 1;
+			window.addEventListener("scroll", () => {
+				const currentScroll = window.pageYOffset;
 
-		function openNav() {
-			document.getElementById("side").style.width = "200px";
-			document.getElementById("open").style.display = "none";
-			document.getElementById("close").style.display = "block";
-			document.getElementsByTagName("body")[0].style.overflowY = "hidden";
-		}
+				if(currentScroll >= 150) {
+					m.style.opacity = 1;
+				}
 
-		function closeNav() {
-			document.getElementById("side").style.width = "0px";
-			document.getElementById("open").style.display = "block";
-			document.getElementById("close").style.display = "none";
-			document.getElementsByTagName("body")[0].style.overflowY = "auto";
-		}
-	</script>
+				if(currentScroll >= 600) {
+					v.style.opacity = 1;
+				}
+
+				if(currentScroll >= 970) {
+					p.style.opacity = 1;
+				}
+			});
+		</script>
 	</body>
 </html>
