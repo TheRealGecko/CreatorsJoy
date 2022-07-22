@@ -1,8 +1,4 @@
 # CreatorsJoy
 
-A WIP website for Creators' Joy<br>
-Currently not compatible with mobile devices
+A very very WIP website for Creators' Joy<br>
 
-Features coming soon
-- Blog
-- Gallery 
